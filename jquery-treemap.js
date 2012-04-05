@@ -47,8 +47,8 @@
         $.extend(this, options);
 
         this.setNodeColors = function($box) {
-            if (this.backgroundColor) $box.css('background-color', this.backgroundColor());
-            if (this.color) $box.css('color', this.color());
+            if (this.backgroundColor) $box.css('background-color', this.backgroundColor($box));
+            if (this.color) $box.css('color', this.color($box));
         }
     }
 
@@ -91,6 +91,7 @@
             var $content = $("<div>" + node.label + "</div>");
             $content.addClass('treemap-label');
             $content.css({
+                'display': 'inline',
                 'position': 'relative',
                 'text-align': 'center',
                 'font-size': '24px'
@@ -115,6 +116,7 @@
             }
             $content.css('font-size', fontSize + 'px');
         }
+        $content.css('display', 'block');
         this.paintCallback($content, node);
     }
 
