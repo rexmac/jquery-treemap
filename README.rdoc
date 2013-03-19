@@ -60,3 +60,7 @@ You can alsa pass functions to deal with events related to mouse.
         }
     );
 
+
+== License
+
+jQuery Treemap is released under the {MIT License}[http://www.opensource.org/licenses/MIT].
