@@ -23,8 +23,10 @@ The settings shown below are the defaults.
     }
 
 ### `data`
-An array of JS objects containing labels and values for each node of the treemap
+An array of JS objects containing labels and values for each node of the treemap.
+
 Example:
+
     [
         {label: "Apple", value: 24},
         {label: "Papaya", value: 40},
